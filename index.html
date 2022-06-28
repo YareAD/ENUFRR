@@ -25,18 +25,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Conócenos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Nuestro Plantel Educativo</a></li>
-                <li><a class="dropdown-item" href="lineasGC.html">Líneas de Generación del Conocimiento</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Conócenos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Nuestro Plantel Educativo</a></li>
+              <li><a class="dropdown-item" href="lineasGC.html">Líneas de Generación del Conocimiento</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle barra" href="#" data-bs-toggle="dropdown">Posgrados</a>
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="posgrado.html">Maestrías &raquo;</a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item active" href="posgrado.html">
+                  Maestría en Innovación Educativa con Acentuación en Enseñanza Híbrida</a></li>
               </ul>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link barra" href="posgrado.html">Posgrado</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Programas de Estudios &raquo; </a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Seminario</a></li>
+                  <li><a class="dropdown-item" href="#">Taller</a></li>
+                  <li><a class="dropdown-item" href="#">Cursos</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Curso de Inglés</a></li>
+              <li><a class="dropdown-item" href="#">Curdo de Computación</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
@@ -47,19 +66,18 @@
               <li><a class="dropdown-item" href="#">Lic. Educación Prescolar</a></li>
               <li><a class="dropdown-item" href="#">Lic. Educación Primaria</a></li>
               <li><a class="dropdown-item" href="#">Lic. Enseñanza y Aprendizaje Telesecundaria</a></li>
+
             </ul>
           </li>
         </ul>
-        
+
         <img class="ms-4 me-2" src="img/Recurso 4.png" alt="" width="30%" height="80%">
         <img class="ms-2 me-4" src="img/logoGuerrero2.png" alt="" width="30%" height="80%">
 
-        <div class="">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
-          </form>
-        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+        </form>
       </div>
     </div>
   </nav>
@@ -251,4 +269,40 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+  <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
+
+      // close all inner dropdowns when parent is closed
+      document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+        everydropdown.addEventListener('hidden.bs.dropdown', function () {
+          // after dropdown is hidden, then find all submenus
+          this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+            // hide every submenu as well
+            everysubmenu.style.display = 'none';
+          });
+        })
+      });
+
+      document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          let nextEl = this.nextElementSibling;
+          if (nextEl && nextEl.classList.contains('submenu')) {
+            // prevent opening link if link needs to open dropdown
+            e.preventDefault();
+            if (nextEl.style.display == 'block') {
+              nextEl.style.display = 'none';
+            } else {
+              nextEl.style.display = 'block';
+            }
+
+          }
+        });
+      })
+    }
+    // end if innerWidth
+  });
+  </script>
 </html>
