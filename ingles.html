@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/ingles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Inglés</title>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand bar" href="index.html"><b>ENUF</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plantel.html">Nuestro Plantel Educativo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle barra" href="#" data-bs-toggle="dropdown">Posgrados</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="posgrado.html">Maestrías &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item active" href="posgrado.html">
+                                            Maestría en Innovación Educativa con Acentuación en Enseñanza Híbrida</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Programas de Estudios &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="semtaller.html">Seminario y Taller</a></li>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cursos Complementarios &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="ingles.html">Inglés</a></li>
+                            <li><a class="dropdown-item" href="">Computación</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="lineasGC.html">Líneas de Generación del Conocimiento</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Oferta Educativa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Lic. Educación Prescolar</a></li>
+                        <li><a class="dropdown-item" href="#">Lic. Educación Primaria</a></li>
+                        <li><a class="dropdown-item" href="#">Lic. Enseñanza y Aprendizaje Telesecundaria</a></li>
+
+                    </ul>
+                </li>
+                </ul>
+
+                <img class="ms-4 me-2" src="img/Recurso 4.png" alt="" width="30%" height="80%">
+                <img class="ms-2 me-4" src="img/logoGuerrero2.png" alt="" width="30%" height="80%">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <div class="d-flex flex-column justify-content-center">
+        <h1 class="titulo">Curso Complementario</h1>
+        <h3 class="text-center fw-bold text-primary ">Inglés</h3>
+    </div>
+    <div class="d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-primary m-2 boton" onclick="actualizar('seminario')">Seminario</button>
+        <button type="button" class="btn btn-primary m-2 boton"
+            onclick="actualizar('fundamentacion')">Fundamentación</button>
+        <button type="button" class="btn btn-primary m-2 boton" onclick="actualizar('perfiles')">Perfiles</button>
+        <button type="button" class="btn btn-primary m-2 boton" onclick="actualizar('mapaCurricular')">Mapa
+            Curricular</button>
+        <button type="button" class="btn btn-primary m-2 boton" onclick="actualizar('ingreso')">Programa</button>
+    </div>
+    <div class="container-md mb-4">
+        <div class="row ">
+            <div class="col-6">
+
+                <section id="perfiles" class="show">
+                    <!-- perfil de ingreso -->
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Perfil de Ingreso</h3>
+                            <p style="text-align: justify;" class="fs-5">
+                                Los docentes que aspiren a cursar este diplomado deberán poseer:
+                            </p>
+                            <br>
+                            <div>
+                                <ul class="numeral">
+                                    <li class="numero ">Una mentalidad abierta para aceptar los retos que implica el
+                                        aprendizaje de una lengua diferente a la materna.
+                                    </li>
+                                    <li class="numero">Actitud positiva ante las diferencias
+                                        culturales manifestadas en la lengua objeto de estudio, en relación con la
+                                        lengua materna.
+                                    </li>
+                                    <li class="numero ">Hábitos de estudio y una disposición positiva ante el
+                                        aprendizaje autónomo.
+                                    </li>
+                                    <li class="numero">Conocimientos básicos de computación y
+                                        manejo del correo electrónico
+                                    </li>
+                                    <li class="numero ">Disposición para el aprendizaje de inglés.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- perfil de egreso -->
+                    <div class="container-md">
+                        <div class="col-12">
+                            <h3 class="fs-2 mt-5">Perfil de Egreso</h3>
+                            <p style="text-align: justify;" class="fs-5">
+                                El alumno egresado del diplomado será capaz de:
+                            </p>
+                            <div>
+                                <ul class="numeral">
+                                    <li class="numero ">Poner en práctica los conocimientos adquiridos y las
+                                        habilidades desarrolladas para leer, interpretar y extraer información de
+                                        diferentes textos en inglés relacionados con la educación.
+                                    </li>
+                                    <li class="numero">Desarrollar habilidades que le permitan determinar la relevancia
+                                        de la información de un texto, capitulo o artículo, relacionado con su tema de
+                                        investigación.
+                                    </li>
+                                    <li class="numero ">Ensanchar sus horizontes culturales mediante la visión que le
+                                        proporciona el aprendizaje de una lengua extranjera.
+                                    </li>
+                                    <li class="numero">Participar en la Certificación de un segundo idioma a nivel de B2
+                                        de acuerdo con el Marco de Comprensión de Lenguas.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="seminario" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Seminario de Comprensión Lectora y Traducción de Textos Académicos en
+                                Inglés</h3>
+                            <p style="text-align: justify;" class="">
+                                El presente diplomado en Comprensión Lectora y Traducción de Textos Académicos en
+                                Inglés, se inserta en el proceso de mejora institucional de la Escuela Normal Urbana
+                                Federal “Profr. Rafael Ramírez”. Responde a la necesidad de contar con un programa de
+                                inglés que permita que los alumnos del posgrado puedan cumplir con el requisito de
+                                poseer el dominio de una lengua extranjera a nivel de comprensión lectora; asimismo,
+                                busca facilitar el acceso a la información académica en lengua inglesa de parte de los
+                                docentes de esta institución educativa.
+                            </p>
+                            <p style="text-align: justify;">
+                                La propuesta curricular del Diplomado en Comprensión Lectora y Traducción de Textos
+                                Académicos en Inglés, se organiza en dos áreas:
+                                <ul>
+                                    <li>Conocimientos gramaticales y expansión de vocabulario</li>
+                                    <li>Desarrollo de estrategias de lectura y traducción.</li>
+                                </ul>
+                                La primera área comprende un primer módulo con dos cursos: Gramática y Vocabulario I y
+                                II, mientras que en la segunda área se incluyen dos módulos con cuatro cursos:
+                                Estrategias de Comprensión Lectora I y II y Estrategias de Traducción I y II.
+                            </p>
+                            <p style="text-align: justify;">
+                                Este diplomado está orientado a los alumnos del posgrado y a los docentes de la Escuela
+                                Normal Urbana Federal “Profr. Rafael Ramírez”. Tiene el propósito de proporcionar a los
+                                estudiantes una alternativa de acceso a la información académica en inglés, mediante el
+                                desarrollo de la competencia lingüística y de estrategias de comprensión lectora y
+                                traducción de textos, como complemento para la obtención de la Certificación de un
+                                segundo idioma a nivel de B2 de acuerdo con el Marco de Comprensión de Lenguas.
+                            </p>
+                            <p style="text-align: justify;">
+                                La modalidad de trabajo consiste en desarrollar sesiones presenciales y actividades de
+                                estudio y de trabajo a través de Internet. Para registrar las actividades extraclase de
+                                cada estudiante, se creará un expediente digital que se tomará en cuenta para la
+                                evaluación final del diplomado.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="fundamentacion" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Fundamentación</h3>
+                            <p style="text-align: justify;">
+                                La época actual se caracteriza por un constante intercambio de información a través de
+                                libros, revistas especializadas, diferentes eventos académicos, a través de las redes de
+                                Internet. Si bien es cierto que este flujo de información se materializa mediante las
+                                diferentes lenguas habladas en todo el orbe, es necesario señalar que el inglés es el
+                                idioma que más se requiere para tener acceso a la información que, segundo a segundo, se
+                                está generando en los diferentes ámbitos del quehacer humano.
+                            </p>
+                            <p style="text-align: justify;">
+                                Dentro del ámbito académico es impostergable que el conocimiento y el uso del inglés
+                                deje de ser un mero requisito administrativo para obtener un grado académico. Es
+                                necesario que se considere como una herramienta que haga posible el acceso a las fuentes
+                                de información en esa lengua. De manera creciente la bibliografía en inglés es más
+                                utilizada y la asistencia de los docentes a eventos de carácter internacional se ha
+                                convertido en una etapa más de su formación académica.
+                            </p>
+                            <p style="text-align: justify;">
+                                Satisfacer la demanda de conocimientos en inglés que haga posible que los docentes de
+                                educación básica y media superior tengan acceso a las fuentes de información en ese
+                                idioma, ha sido un reto que no se ha enfrentado de manera adecuada por parte de las
+                                Instituciones Formadoras y Actualizadoras de Docentes (IFAD), pues aunque se programan
+                                cursos de inglés, en la mayoría de los casos, se hace atendiendo a la idea de que estos
+                                cursos son complementarios en la formación de los estudiantes de posgrado. En pocas
+                                palabras, no se concibe el conocimiento del inglés, o de otra lengua, como una
+                                herramienta que haga posible el ensanchamiento de la visión de los estudiantes de
+                                posgrado al tener acceso a una información que no está escrita en su lengua materna.
+                            </p>
+                            <p style="text-align: justify;">
+                                Una propuesta de tal naturaleza deberá tener como propósito último el que los alumnos no
+                                sólo tengan acceso a la información en otro idioma, sino que sean capaces de utilizarla
+                                en sus planteamientos teóricos. Es decir, que puedan citar fuentes de información sin
+                                tergiversar, por falta de dominio del idioma, las ideas expresadas por los autores de
+                                las obras consultadas.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mapaCurricular" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Mapa Curricular</h3>
+                            <p style="text-align: justify;">
+                                <b>El módulo de gramática y vocabulario</b> brinda conocimientos acerca de los tiempos
+                                simples
+                                y compuestos (incluyendo a los auxiliares modales), y los tiempos progresivos, tanto de
+                                la voz activa como de la voz pasiva. Además, se hace hincapié en la expansión de
+                                vocabulario a partir del conocimiento de prefijos, raíces y sufijos.
+                            </p>
+                            <p style="text-align: justify;">
+                                <b>El segundo módulo</b> brinda conocimientos que permiten el desarrollo y la aplicación
+                                de
+                                estrategias, tanto las que este diplomado provea como las que el alumno ya posee en su
+                                lengua materna, en el proceso de la lectura.
+                            </p>
+                            <p style="text-align: justify;">
+                                <b>El tercer módulo</b> brinda conocimientos que permiten la utilización de estrategias
+                                en la
+                                traducción de enunciados, párrafos y artículos breves.
+                            </p>
+
+                            <div class="grid">
+                                <div class="item cero d-flex align-items-center justify-content-center">Módulos</div>
+                                <div class="item uno">Modulo I</div>
+                                <div class="item dos">Modulo II</div>
+                                <div class="item tres">Modulo III</div>
+
+                                <!-- <div class="item cuatro">Areas</div> -->
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+
+                                <div class="item cinco d-flex align-items-center justify-content-center">Conocimientos
+                                    Gramaticales
+                                </div>
+                                <div class="d6 ">Gramática y Vocabulario I</div>
+                                <div class="d7"></div>
+                                <div class="d8"></div>
+
+                                <div class="d9 itemex1">30</div>
+                                <div class="d10 itemex1">3.7</div>
+                                <div class="d11"></div>
+                                <div class="d12"></div>
+                                <div class="d13"></div>
+                                <div class="d14"></div>
+
+                                <div class="d6">Gramática y Vocabulario II</div>
+                                <div class="d7"></div>
+                                <div class="d8"></div>
+
+                                <div class="d9 itemex1">30</div>
+                                <div class="d10 itemex1">3.7</div>
+                                <div class="d11"></div>
+                                <div class="d12"></div>
+                                <div class="d13"></div>
+                                <div class="d14"></div>
+
+
+                                <div class="item d15 d-flex align-items-center justify-content-center">Desarrollo de
+                                    Habilidades de Lectura y Traducción
+                                </div>
+                                <div class="d6"></div>
+                                <div class="d7">Estrategias de Comprensión Lectora I</div>
+                                <div class="d8">Estrategias de Traducción I</div>
+
+                                <div class="d9"></div>
+                                <div class="d10"></div>
+                                <div class="d11 itemex1">30</div>
+                                <div class="d12 itemex1">3.7</div>
+                                <div class="d13 itemex1">30</div>
+                                <div class="d14 itemex1">3.7</div> 
+
+                                <div class="d6"></div>
+                                <div class="d7">Estrategias de Comprensión Lectora II</div>
+                                <div class="d8">Estrategias de Traducción II</div>
+
+                                <div class="d9"></div>
+                                <div class="d10"></div>
+                                <div class="d11 itemex1">30</div>
+                                <div class="d12 itemex1">3.7</div>
+                                <div class="d13 itemex1">30</div>
+                                <div class="d14 itemex1">3.7</div> 
+
+                                <div class="d16"></div>
+                                <div class="d9 itemex2">60</div>
+                                <div class="d10 itemex2">7.4</div>
+                                <div class="d11 itemex2">60</div>
+                                <div class="d12 itemex2">7.4</div>
+                                <div class="d13 itemex2">60</div>
+                                <div class="d14 itemex2">7.4</div> 
+                               
+                            </div>
+                            <br>
+                            <p>Total de Horas: 180</p>
+                            <p>Total de Créditos: 22.2</p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+            <div class="col-6 text-center">
+                <img src="img/ingles.jpg" alt="" width="400px" height="100%" fill="#777" class="bd-placeholder-img"
+                    width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+<script>
+    function actualizar(seccion) {
+        var current_section = document.getElementsByClassName('show');
+        current_section[0].classList.add('hidden');
+        current_section[0].classList.remove('show');
+        console.log(current_section);
+
+
+
+        var seccion = document.getElementById(seccion);
+
+        seccion.classList.remove('hidden');
+        seccion.classList.add('show');
+    }
+
+
+
+    // funcion para submenu de navbar 
+    document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth < 992) {
+
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                    // after dropdown is hidden, then find all submenus
+                    this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                        // hide every submenu as well
+                        everysubmenu.style.display = 'none';
+                    });
+                })
+            });
+
+            document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    let nextEl = this.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains('submenu')) {
+                        // prevent opening link if link needs to open dropdown
+                        e.preventDefault();
+                        if (nextEl.style.display == 'block') {
+                            nextEl.style.display = 'none';
+                        } else {
+                            nextEl.style.display = 'block';
+                        }
+
+                    }
+                });
+            })
+        }
+        // end if innerWidth
+    });
+</script>
+
+</html>
