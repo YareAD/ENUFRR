@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/computo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Computación</title>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand bar" href="index.html"><b>ENUF</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plantel.html">Nuestro Plantel Educativo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle barra" href="#" data-bs-toggle="dropdown">Posgrados</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="posgrado.html">Maestrías &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item active" href="posgrado.html">
+                                            Maestría en Innovación Educativa con Acentuación en Enseñanza Híbrida</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Programas de Estudios &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="semtaller.html">Seminario y Taller</a></li>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cursos Complementarios &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="ingles.html">Inglés</a></li>
+                            <li><a class="dropdown-item" href="">Computación</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="lineasGC.html">Líneas de Generación del Conocimiento</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle barra" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Oferta Educativa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Lic. Educación Prescolar</a></li>
+                        <li><a class="dropdown-item" href="#">Lic. Educación Primaria</a></li>
+                        <li><a class="dropdown-item" href="#">Lic. Enseñanza y Aprendizaje Telesecundaria</a></li>
+
+                    </ul>
+                </li>
+                </ul>
+
+                <img class="ms-4 me-2" src="img/Recurso 4.png" alt="" width="30%" height="80%">
+                <img class="ms-2 me-4" src="img/logoGuerrero2.png" alt="" width="30%" height="80%">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <div class="d-flex flex-column justify-content-center">
+        <h1 class="titulo">Curso Complementario</h1>
+        <h3 class="text-center fw-bold text-primary mb-4">Computación</h3>
+    </div>
+    <div class="d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-outline-primary m-2 boton"
+            onclick="actualizar('paquetes')">Paquetes</button>
+        <button type="button" class="btn btn-outline-primary m-2 boton" onclick="actualizar('mapaCurricular')">Mapa
+            Curricular</button>
+        <button type="button" class="btn btn-outline-primary m-2 boton" onclick="actualizar('modulos')">Módulos</button>
+        <button type="button" class="btn btn-outline-primary m-2 boton" onclick="actualizar('ingreso')">Ingreso y
+            Permanencia</button>
+    </div>
+    <div class="container-md mb-4">
+        <div class="row ">
+            <div class="col-6">
+
+                <section id="paquetes" class="show">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Curso: Paquetes Computacionales </h3>
+                            <p style="text-align: justify;" class="">
+                                Considerando que el manejo de los paquetes computacionales viene a apoyar el proceso
+                                formativo de los estudiantes, en cada uno de los cursos y/o seminario, así como en el
+                                proceso de investigación que deben desarrollar a fin de obtener su grado, como “una
+                                preparación” complementaria al programa que cursan se diseñó el presente taller, con los
+                                objetivos siguientes:
+                            </p>
+                            <p style="text-align: justify;">
+                                Que refieren al conocimiento y manejo inteligente de la PC:
+                            </p>
+                            <p style="text-align: justify;">
+                                <b>General</b> <br>
+                                <ul>
+                                    <li>Consolidar destrezas y habilidades para la manipulación de una computadora, uso
+                                        y
+                                        manejo adecuado y configuración del sistema operativo con propósitos específicos
+                                        de uso
+                                        para su proceso de formación como estudiante de posgrado.</li>
+                                </ul>
+
+                            </p>
+                            <p style="text-align: justify;">
+                                <b>Específicos</b> <br>
+                                <ul>
+                                    <li>Realizar una búsqueda formatos específicos, característica y funciones, accesos
+                                        directos, procesadores de texto, presentaciones digitales e Internet.</li>
+                                    <li>Poder usar las funciones de los programas usuales de Microsoft Office (Word,
+                                        Excel,
+                                        Internet Explorer, Outlook, Powerpoint), en beneficio de su proceso de formación
+                                        como
+                                        estudiante de posgrado.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulos" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Módulos del Diplomado de paquetes computacionales.</h3>
+                            <br>
+                            <table class="table ">
+                                <tr>
+                                    <td>Módulo 1 <br> Configuración del sistema operativo Windows </td>
+                                    <td>
+                                        <li>El sistema Operativo</li>
+                                        <li>Propiedades del sistema</li>
+                                        <li>Administrador de tareas de Windows</li>
+                                        <li>Comprimir y descomprimir archivos con winrar</li>
+                                        <li>Transferencia de archivos a diferentes dispositivos de almacenamiento. </li>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Módulo 2 <br> Procesadores de texto: Microsoft Word </td>
+                                    <td>
+                                        <li>Procesar un texto para dar formato</li>
+                                        <li>Insertar imágenes</li>
+                                        <li>Insertar encabezado y pie de página </li>
+                                        <li>Insertar tablas </li>
+                                        <li>Insertar símbolos </li>
+                                        <li>Insertar comentario </li>
+                                        <li>Insertar un hiperenlace </li>
+                                        <li>Insertar un índice </li>
+                                        <li>Insertar formas </li>
+                                        <li>Elaborar e insertar organigramas </li>
+                                        <li>Elaborar e insertar gráficos estadísticos</li>
+                                        <li>Ejercicios prácticos</li>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>Módulo 3 <br> Usar una hoja de cálculo
+                                        - Microsoft Excel y CALC
+                                    </td>
+                                    <td>
+                                        <li>Utilizar una hoja de cálculo </li>
+                                        <li>Crear una nueva hoja de cálculo </li>
+                                        <li>Trabajar con las hojas de cálculo </li>
+                                        <li>Aplicar bordes a las celdas</li>
+                                        <li>Usar fórmulas matemáticas</li>
+                                        <li>Extraer datos de una hoja a otra</li>
+                                        <li>Proteger una hoja de cálculo con contraseña</li>
+                                        <li>Insertar gráficos en una hoja de cálculo</li>
+                                        <li>Cambiar la orientación de la página</li>
+                                        <li>Utilizar filtros</li>
+                                        <li>Imprimir hoja</li>
+                                        <li>Ejercicios prácticos</li>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Módulo 4 <br> Realizar presentaciones
+                                        con Microsoft PowerPoint
+                                    </td>
+                                    <td>
+                                        <li>Realizar presentaciones </li>
+                                        <li>La pantalla principal al abrir Powerpoint. </li>
+                                        <li>Guardar diapositiva</li>
+                                        <li>Fondos para diapositiva </li>
+                                        <li>Insertar imágenes en diapositivas </li>
+                                        <li>Insertar videos a una diapositiva </li>
+                                        <li>Agregar efecto y/o transiciones a una diapositiva </li>
+                                        <li>Manipular diapositivas </li>
+                                        <li>Ejercicios prácticos</li>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Módulo 5 <br> Uso del internet y de plataformas
+                                    </td>
+                                    <td>
+                                        <li>Introducción a internet</li>
+                                        <li>Correos electrónicos, páginas web, blogs, chats,</li>
+                                        <li>Video conferencias</li>
+                                        <li>Buscadores en internet etc.</li>
+                                        <li>Ejercicios prácticos</li>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="ingreso" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Requisitos de ingreso y permanencia para la obtención del diploma</h3>
+                            <br>
+                            <p style="text-align: justify;">
+                                <b>Requisitos de ingreso</b> <br>
+                                <ul>
+                                    <li>Poseer nivel de licenciatura o equivalente.</li>
+                                    <li>Llenar solicitud de inscripción.</li>
+                                    <li>Cubrir cuota de inscripción.</li>
+                                    <li>Sujetarse a las normas de operación del programa.</li>
+                                    <li>Disponibilidad de tiempo para cumplir con las exigencias del programa.</li>
+                                    <li>Tener cuenta de correo electrónico. </li>
+                                </ul>
+                            </p>
+                            
+                            <p style="text-align: justify;">
+                                <b>Dinámica de trabajo</b> <br>
+                                Este taller tendrá una duración de 80 horas, y se desarrollará con base en 30 horas
+                                teóricas y 50 horas prácticas, las primeras implican la revisión de los contenidos de
+                                cada módulo y las segundas refieren a un trabajo en el laboratorio.
+                                <br>
+                                <br>
+                                <b>Criterios de acreditación y evaluación:</b> <br>
+                                La acreditación estará dada por asistencia, participación al 100% de las actividades que
+                                integran el curso, y por la realización de los trabajos que tanto en el aula como fuera
+                                de ella el maestro solicite que se desarrollen. Quienes no cubran el 80% de asistencia
+                                y/o no desarrollen el 100% de las actividades del curso, tendrán la oportunidad de
+                                presentar un examen final para poder acreditarlo.
+                                La calificación mínima aprobatoria será de 8 (ocho), y estará determinado por las
+                                ponderaciones siguientes:
+                                <ul>
+                                    <li>Asistencia al curso 				          50%</li>
+                                    <li>Prácticas realizadas en cada sesión 		  30%</li>
+                                    <li>Examen de práctica final de laboratorio 	  20%</li>
+                                </ul>
+                            </p>
+                            
+                           
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="mapaCurricular" class="hidden">
+                    <div class="container-md ">
+                        <div class="col-12">
+                            <h3 class="fs-2">Mapa Curricular</h3>
+
+                            <div class="grid">
+                                <div class="item cero d-flex align-items-center justify-content-center">Módulos</div>
+                                <div class="item uno">Modulo I</div>
+                                <div class="item dos">Modulo II</div>
+                                <div class="item tres">Modulo III</div>
+                                <div class="item cuatro">Modulo IV</div>
+                                <div class="item cuatro-">Modulo V</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+                                <div class="itemex">Horas</div>
+                                <div class="itemex">Créditos</div>
+
+
+                                <div class="item cinco d-flex align-items-center justify-content-center">Conocimientos
+                                    Básicos
+                                </div>
+                                <div class="uno-">Configuración del sistema operativo Windows </div>
+                                <div class="dos"></div>
+                                <div class="tres"></div>
+                                <div class="cuatro"></div>
+                                <div class="cuatro-"></div>
+
+                                <div class="itemex">36</div>
+                                <div class="itemex">4.4</div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+                                <div class=""></div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="col-6 text-center">
+                <img src="img/computo.jpg" alt="" width="400px" height="600px" fill="#777" class="bd-placeholder-img"
+                    width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+    </div>
+
+    <footer class=" pt-3 mt-4 text-muted border-top container">
+        <p class="float-end"><a href="#">Volver Arriba</a></p>
+        <p>&copy; Julio 2022 </p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+<script>
+    function actualizar(seccion) {
+        var current_section = document.getElementsByClassName('show');
+        current_section[0].classList.add('hidden');
+        current_section[0].classList.remove('show');
+        console.log(current_section);
+
+
+
+        var seccion = document.getElementById(seccion);
+
+        seccion.classList.remove('hidden');
+        seccion.classList.add('show');
+    }
+
+
+
+    // funcion para submenu de navbar 
+    document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth < 992) {
+
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                    // after dropdown is hidden, then find all submenus
+                    this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                        // hide every submenu as well
+                        everysubmenu.style.display = 'none';
+                    });
+                })
+            });
+
+            document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    let nextEl = this.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains('submenu')) {
+                        // prevent opening link if link needs to open dropdown
+                        e.preventDefault();
+                        if (nextEl.style.display == 'block') {
+                            nextEl.style.display = 'none';
+                        } else {
+                            nextEl.style.display = 'block';
+                        }
+
+                    }
+                });
+            })
+        }
+        // end if innerWidth
+    });
+</script>
+
+</html>
